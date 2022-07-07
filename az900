@@ -1,0 +1,203 @@
+Exam Ref AZ-900 Microsoft Azure Fundamentals, 2nd Edition
+https://learning.oreilly.com/library/view/exam-ref-az-900/9780136877202/
+
+Chapter 1: Describe cloud concepts
+
+* Benefits & Key Considerations
+	- high availability: 
+		- SLA close to 100
+		- network outages, app failures (cloud design patterns) Application Insights tool for performance and reliability,
+		- ease of testing on pilot users, 
+		- new releases and rollback
+		- system outages, 
+		- power outages,  
+		- upstreams / reliant systems
+	- scalability, elasticity and agility
+		- scale up (vertical) and out (horizontal)
+		- high load spikes / seasonality / eod 
+		- also scale in / down to reduce costs
+		- Azure Auto-Scale service. based on usage patterns, time of day, res utils
+		- agility == quickly adusting scale
+	- fault tolerance and disaster recovery
+		- monitor health to detect unhealthy
+		- take action to recover
+		- vms are allocated within infra st. unlikely to be affected by system failures
+		- fault tolerance at smaller scale
+		- DR applies when whole region can get affected.
+			- requires reliable backups of important data
+			- replicating app resources in unaffected region 
+			- BCP plans / BCDR plans
+	- capital and operating expenses
+		- on-prem - high Capex and Opex, long acquisition and config times
+		- cloud - rent model avoids capex moves to Opex. much easier to track on month to month basis, economies of scale		
+	- consumption based model - pay per use eg. serverless
+
+* Categories of cloud services
+	- shared responsibility model
+	- IaaS: infra only. 
+		- eg. Ubuntu/Windows VM's with CPU,Disk,Memory,Network, Mgmt etc.
+		- gain access to many services like Azure Security Center, Azure Backup, Azure log analytics etc.
+		- reduce cost by switching off servers
+		- rent capacity only when needed
+		- scaling/elasticity/agility adv
+		- great choice - someone manages hw infra or need high end vm for specific needs
+		- App and config in cloud. can stop / start and resume 
+	- PaaS: Platforms with OS and middleware software installed
+		- eg. Azure app service, Az CDN, Az Cosmos DB, Az SQL DB, Az DB for MySQL, Az Storage, Az Synapse Analytics
+		- reduce management expenses for custom apps. can lift and shift
+		- vm's are abstracted, managed by provider
+		- Azure App service for docker. Simplify packaging apps
+		- App frameworks like PHP, Node.js, Java, Python etc. are bundnled
+		- fault tolerance, backup/restore, DR, etc.
+		- lose flexibility when to update VM for patches etc.
+	- SaaS
+		- eg. MS 365, Xbox, OneDrive, Power Automate (MS Flow)
+	- Comparing service types
+	
+* Types of cloud computing
+	- Public 
+		- shared infra available on a public n/w
+		- eg. Azure, AWS, GCP 
+		- protected by Authn.
+		- aka. Multi-tenant environments
+		- disadv. give up some control, may not meet your security requirements, locks you into specific configs of cloud provider
+	- Private
+		- single tenant, chosen for privacy and regulatory concerns
+		- accessible only single org
+		- banks, medical providers - regulations
+		- not neccesarily on prem. can be with a third party data center
+	- Hybrid
+		- mix of public & private
+		- legacy on-prem systems, expensive to move to cloud
+		- data can be left on prem
+	- Community: similar to private but for a group of companies/individuals
+		- not part of exam
+		
+
+Chapter 2: Describe Core Azure Services
+	* Core Azure Architectural Components
+		- Az regions and regional pairs
+			- Geographies - boundary often a border of country. good for country specific regulations. eg. US, Canada, UK etc.
+			- Regions break up geographies eg. Central US Iowa, East US Virgina, West US CA
+			- Isolated regions completely dedicated to Govt data
+			- Regional pairs are another logical boundary within each geography with 2 regions each. Updates applied to 1 region and once successful moved to next
+			- regions in pair separated by large distances
+			- Each region has data centers / physical buildings with hardware in server racks & network infra with low latency
+			- services in same region have reliable fast n/w connectivity with each other
+			- each data center has isolated power supply and power generators
+			- garunteed round trip n/w performance of 2ms betn regions
+		- Availability Zones
+			- per datacenter
+			- not for all regions
+			- atleast 3 availability zones in each enabled region
+			- can provide some fault tolerance but not for DR impacting entire region
+			- some services like App Service Certificates dont make sense so not available with zones
+			- Windows / Linux VM's, VM Scale sets, AKS, Zone redundant storage. VPN gateway...
+			deploy to 2 or more AZ get max availability for resource. 99.99 garunteed by MS for 2 or more VMs deployed in 2 or more zones
+			- Status for all services: https://status.azure.com
+			- Different from Availability Sets which allow you to create 2 or more VM;s on different phys server racks in same Az datacenter. MS garunteed 99.95 for Availability Sets
+			- Zonal services and zone redundant services. For HA must explicitly deploy to 2 or more zones
+		- Resource Groups
+			- for enterprise apps dealing with array of services spread across regions
+			- resource group logical container for az services
+			- deploy and manage all as single entity. can take advantage of ARM template
+			- chains of arm template for multiple resource groups
+			- costs of all resources within each group
+			- some companies create resource groups by dept instead of apps
+			- one resource can only be in one resource group
+			- can move resource from one group to other but can be risky - guidance
+			- script to generate arm template.
+			- delete resource group cleans all resources within		
+		- Az Subscriptions
+			- can have one or more subscriptions
+			- limits per subscription. 
+			- can manage cost by creating budgets
+			- invoices available for subscriptions
+			- several types like free-trial, pay-as-you-go, pay as you go /dev/test (discounted rates on VM's but not for prod)
+		- Management Groups
+			- convinient way to apply policies and access control to Az reources
+			- can only contain Az subscriptions and other mgmt groups
+			- offer more precise control on who has access to which resources
+			- limitations: total of 10K mgmt groups, hierachy can support 6 levels and cannot have multiple parents for single mgmt group or subscription
+		- ARM Az Res Mgr
+			- can be headache to manage Az services separately with multiple apps in the cloud it can be worse. tracking which service are related to which apps etc.
+			- ARM runs in Az and responsible for all interaction with AZ Services
+			- Works with resource providers. Eg. Microsoft.Web for app services / Microsoft.Compute for VMs to manage lifecycle
+			- ARM used from Portal, CLI, API. Visual studio uses ARM API
+			- ARM uses declarative JSON based syntax called ARM templates. Tell it what you want. no need to specify how
+			- Tips
+				- Allows to easily deploy multiple resources at once
+				- Reproduce any deployment with consistent results
+				- Create declarative templates instead of writing code and maintain complex deployment scripts
+				- Allows setup dependencies so that resources are deployed in right order every time
+				
+	* Core Resources in Azure
+		- Az VMs
+			- hypervisor for 1 or more VM's on physical mc, guest OS may be different
+			- Fault domains: logical rep of physical rack. by default 2 fault domains to 1 availability sets
+			- Update domains: protect from situation where host is being rebooted and planned maintenance evts. with an availability set Az creates 5 update domains by default and spread across fault domains in the Availability set.
+			- scalesets - tell Az the OD and number of VMs. 
+			- Custom image with more than plain OS. can include your apps and other soft tool
+			- vms in scalesets 
+				- get benefit from multiple fault and update domains
+				- are compatible with availability zones so protected 
+				- can scale as load increases and work with AZ Auto-Scale feature
+			- single VM SLA == 99.9. Multi VM SLA == 99.95		
+		- Az App Service
+			- PaaS
+			- multiple apps on app service plans
+			- fronted by AZ lb and Frontend
+			- Pricing tiers - Free, Shared, Basic, Standard, Premium, PremiumV2
+			- Charged for the plans even when no web apps are running or stopped
+			- To avoid billing delete app service plan
+			- Can create web apps to deploy in App Service. Options for Code / Docker Container
+			- Options for manual / autoscale
+			
+		- Az Container Instance ACI
+			- created using a zipped version of app called image. 
+			- each container operates in isolated env. separated from other containers on same machine. ideal for security concerns
+			- makes easy to start a container with minimal config
+			- can tell ACI where to find image using Docker tag or a URL 
+			- good for simple containers but not for heavy loads scenarios and need scaling. use AKS instead	
+			- can create from quick start images
+			- dns name label to expose to world. 
+			- IMPORTANT: cannot change dns name label or image used by instance. will need to delete and recreate. Doing so will lose Public IP address so plan ahead
+		- Az Kubernetes Service AKS
+			- container orchestration service
+			- responsible for monitoring containers and ensuring they are always running
+			- can also scale up / down as needed
+			- containers created in a pod - group of related containers sharing resources
+			- AKS releases from resource-sharing restrictions in multi-container env
+			- resources cannot be shared across pods
+			- pods run on computers called node / worker with docker runtime
+			- also other services for kube to manage pods and so on
+			- multiple nodes managed by kube master. entire env of master and nodes is kube cluster
+			- master has all config and services to manager orchestration of pods and config can be complex & laborious. services AKS popular due to this
+			- operations like upgrading / scaling cluster are menu options in AZ portal
+			- AKS is free, only pay for compute resources in the cluster
+		- Windows Virtual desktop
+			- Desktop virtualization PaaS service.
+			- First create a WVD tenant
+				- collection of host pools
+					- consists of session hosts and one or more app groups which represent apps and OS desktops users should be able to access
+					- session hosts are azure VMS configured for WVD
+			- Add users from Az Active Directory and permission them
+			- users can access over WVD client from Windows / MacOs/ IOS /Android / Web browsers
+			- Users can have local profile and access OneDrive along with WVD
+		- Virtual networks
+			-AZ services can communicate with each other and with the Internet
+			
+		- Az VPN Gateway
+		- Virtual network pairing
+		- ExpressRoute
+		- Container Blob Storage
+		- Disk storage
+		- Az Files
+		- Storage Tiers
+		- Cosmos DB
+		- AZ SQL database
+		- AZ DB for MySQL
+		- AZ DB for PostgreSQL
+		- AZ Marketplace
+		
+		
