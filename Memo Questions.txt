@@ -1,0 +1,378 @@
+﻿1 Find memos for IPOs exceeding $500 million in the airline industry announced in the past year.
+1 ['<ipo|product>', '<greater than|operator>', '<airlines|industry>', '<announced|event>']
+
+
+2 Show me documents for offerings related to electric vehicles in the transportation sector from companies in Europe.
+2 ['<offering|product>', '<electric vehicles|industry>', '<transportation|sector>', '<europe|region>']
+
+
+3 Are there any memos for offerings led by [Investment Bank Name] involving companies headquartered in Asia?
+3 ['<offering|product>', '<led by|role>', '<headquarters|unknown>', '<asia|region>']
+
+
+4 I'm looking for documents for offerings completed between 2018 and 2020 where Specific Person Name was involved as an advisor.
+4 ['<offering|product>', '<completed|event>', '<between|operator>']
+
+
+5 Show me memos for companies offering freight transportation services with an offering size between $100 million and $200 million.
+5 ['<offering|product>', '<freight|industry>', '<offering size|attribute>', '<between|operator>']
+
+
+6 Find memos for offerings in the shipping industry exceeding $1 billion from companies in North America announced after 2022.
+6 ['<offering|product>', '<shipping|industry>', '<greater than|operator>', '<north america|region>', '<announced|event>', '<after|dateop>']
+
+
+7 Show me documents for IPOs led by Investment Bank Name involving companies with  "logistics" in their name and a size exceeding $200 million.
+7 ['<ipo|product>', '<led by|role>', '<offering size|attribute>', '<greater than|operator>']
+
+
+8 Are there any memos for offerings completed between 2019 and 2021 where [Specific Lawyer Name] was involved in the legal team and the offering size was below $50 million?
+8 ['<offering|product>', '<completed|event>', '<between|operator>', '<legal team|unknown>', '<offering size|attribute>', '<less than|operator>']
+
+
+9 I'm looking for documents for companies offering autonomous transportation technology with an offering size between $500 million and $1 billion.
+9 ['<offering|product>', '<transportation|sector>', '<offering size|attribute>', '<between|operator>']
+
+
+10 Show me memos for offerings in the rail sector from companies headquartered in developing countries with an upcoming offering date.
+10 ['<offering|product>', '<headquarters|unknown>', '<offering|product>']
+
+
+11 Find memos for IPOs exceeding $1 billion in the airline industry announced in the past year by companies with "cargo" in their name.
+11 ['<ipo|product>', '<greater than|operator>', '<airlines|industry>', '<announced|event>']
+
+
+12 Show me documents for offerings related to electric vehicles in the transportation sector from companies in Europe led by [Investment Bank Name].
+12 ['<offering|product>', '<electric vehicles|industry>', '<transportation|sector>', '<europe|region>', '<led by|role>']
+
+
+13 Are there any memos for offerings involving companies with "public transportation" in their name and a size exceeding $300 million?
+13 ['<offering|product>', '<transportation|sector>', '<offering size|attribute>', '<greater than|operator>']
+
+
+14 I'm looking for documents for offerings completed between 2017 and 2019 where [Specific Person Name] was involved as an advisor and the offering was in the freight and logistics sector.
+14 ['<offering|product>', '<completed|event>', '<between|operator>', '<offering|product>', '<freight|industry>']
+
+
+15 Show me memos for companies offering autonomous shipping technology with an offering size between $200 million and $500 million and headquartered in North America.
+15 ['<offering|product>', '<shipping|industry>', '<offering size|attribute>', '<between|operator>', '<headquarters|unknown>', '<north america|region>']
+
+
+16 Find memos for offerings in the airline industry exceeding $750 million from companies in Europe announced after 2021.
+16 ['<offering|product>', '<airlines|industry>', '<greater than|operator>', '<europe|region>', '<announced|event>', '<after|dateop>']
+
+
+17 Show me documents for IPOs led by [Investment Bank Name] involving companies with "logistics" in their name and a size exceeding $150 million.
+17 ['<ipo|product>', '<led by|role>', '<offering size|attribute>', '<greater than|operator>']
+
+
+18 Are there any memos for offerings completed between 2018 and 2020 where [Specific Lawyer Name] was involved in the legal team and the offering involved public transportation infrastructure?
+18 ['<offering|product>', '<completed|event>', '<between|operator>', '<legal team|unknown>', '<offering|product>', '<transportation|sector>']
+
+
+19 I'm looking for documents for companies offering freight transportation services with an offering size between $75 million and $150 million and announced in the past 6 months.
+19 ['<offering|product>', '<freight|industry>', '<offering size|attribute>', '<between|operator>', '<announced|event>']
+
+
+20 Show me memos for offerings in the rail sector from companies headquartered in developing countries with a completed offering date between 2022 and 2023.
+20 ['<offering|product>', '<headquarters|unknown>', '<completed|event>', '<offering|product>', '<between|operator>']
+
+
+21 Find memos for offerings exceeding $1 billion in the airline industry announced in the past 2 years by companies with "cargo" in their name and headquartered in North America.
+21 ['<offering size|attribute>', '<airlines|industry>', '<announced|event>', '<headquarters|unknown>', '<north america|region>']
+
+
+22 Show me documents for offerings related to electric vehicles in the transportation sector from companies in Europe led by [Investment Bank Name] and completed in the past year.
+22 ['<offering|product>', '<electric vehicles|industry>', '<transportation|sector>', '<europe|region>', '<led by|role>', '<completed|event>']
+
+
+23 Are there any memos for offerings involving companies with "public transportation" in their name, a size exceeding $250 million, and announced in the past 3 months?
+23 ['<offering|product>', '<transportation|sector>', '<offering size|attribute>', '<greater than|operator>', '<announced|event>']
+
+
+24 I'm looking for documents for offerings completed between 2016 and 2018 where [Specific Person Name] was involved as an advisor and the offering was in the shipping industry.
+24 ['<offering|product>', '<completed|event>', '<between|operator>', '<offering|product>', '<shipping|industry>']
+
+
+25 Show me memos for companies offering autonomous transportation technology with an offering size between $100 million and $200 million and led by [Investment Bank Name].
+25 ['<offering|product>', '<transportation|sector>', '<offering size|attribute>', '<between|operator>', '<led by|role>']
+
+
+26 Find memos for offerings in the airline industry exceeding $500 million from companies in Asia announced after 2020.
+26 ['<offering|product>', '<airlines|industry>', '<greater than|operator>', '<asia|region>', '<announced|event>', '<after|dateop>']
+
+
+27 Show me documents for IPOs led by [Investment Bank Name] involving companies with "logistics" in their name and a size exceeding $100 million.
+27 ['<ipo|product>', '<led by|role>', '<offering size|attribute>', '<greater than|operator>']
+
+
+28 Are there any memos for offerings completed between 2017 and 2019 where [Specific Lawyer Name] was involved in the legal team and the offering involved freight transportation services?
+28 ['<offering|product>', '<completed|event>', '<between|operator>', '<legal team|unknown>', '<offering|product>', '<freight|industry>']
+
+
+29 I'm looking for documents for companies offering electric airplanes with an offering size between $300 million and $500 million and announced in the past year.
+29 ['<offering|product>', '<offering size|attribute>', '<between|operator>', '<announced|event>']
+
+
+30 Show me memos for offerings in the rail sector from companies headquartered in Europe with an upcoming offering date.
+30 ['<offering|product>', '<headquarters|unknown>', '<europe|region>', '<offering|product>']
+
+
+31 Find memos for offerings exceeding $1 billion in the airline industry announced in the past 3 years by companies with "cargo" in their name and led by [Investment Bank Name].
+31 ['<offering size|attribute>', '<airlines|industry>', '<announced|event>', '<led by|role>']
+
+
+32 Show me documents for offerings related to electric vehicles in the transportation sector from companies in North America announced in the past 6 months.
+32 ['<offering|product>', '<electric vehicles|industry>', '<transportation|sector>', '<north america|region>', '<announced|event>']
+
+
+33 Are there any memos for offerings involving companies with "public transportation" in their name, a size exceeding $200 million, and completed in the past year?
+33 ['<offering|product>', '<transportation|sector>', '<offering size|attribute>', '<greater than|operator>', '<completed|event>']
+
+
+34 I'm looking for documents for companies offering electric vehicles in the transportation sector with an offering size exceeding $1 billion and announced in the past 2 years.
+34 ['<offering|product>', '<electric vehicles|industry>', '<transportation|sector>', '<offering size|attribute>', '<greater than|operator>', '<announced|event>']
+
+
+35 Show me memos for offerings in the rail sector from companies with a market capitalization exceeding $5 billion and an upcoming offering date.
+35 ['<offering|product>', '<greater than|operator>', '<offering|product>']
+
+
+36 Find memos for offerings exceeding $800 million in the airline industry announced in the past year by companies with "cargo" in their name and a greenshoe option exceeding 10%.
+36 ['<offering size|attribute>', '<airlines|industry>', '<announced|event>', '<greenshoe|attribute>', '<greater than|operator>']
+
+
+37 Show me documents for offerings related to autonomous shipping technology from companies in Europe announced in the past 3 months.
+37 ['<offering|product>', '<shipping|industry>', '<europe|region>', '<announced|event>']
+
+
+38 Are there any memos for offerings involving companies with "public transportation" in their name, a size exceeding $150 million, and completed in the past 6 months?
+38 ['<offering|product>', '<transportation|sector>', '<offering size|attribute>', '<greater than|operator>', '<completed|event>']
+
+
+39 I'm looking for documents for offerings completed between 2014 and 2016 where [Specific Person Name] was involved as an advisor and the offering involved companies with "freight" in their name.
+39 ['<offering|product>', '<completed|event>', '<between|operator>', '<offering|product>', '<freight|industry>']
+
+
+40 Show me memos for companies offering autonomous transportation technology with an offering size between $75 million and $100 million and led by [Investment Bank Name].
+40 ['<offering|product>', '<transportation|sector>', '<offering size|attribute>', '<between|operator>', '<led by|role>']
+
+
+41 Find memos for offerings in the airline industry exceeding $600 million from companies in North America announced before 2022.
+41 ['<offering|product>', '<airlines|industry>', '<greater than|operator>', '<north america|region>', '<announced|event>', '<before|dateop>']
+
+
+42 Show me documents for block trades led by [Investment Bank Name] involving companies with "logistics" in their name and a size exceeding $300 million.
+42 ['<led by|role>', '<offering size|attribute>', '<greater than|operator>']
+
+
+43 Are there any memos for offerings completed between 2015 and 2017 where [Specific Lawyer Name] was involved in the legal team and the offering involved companies with "rail" in their name?
+43 ['<offering|product>', '<completed|event>', '<between|operator>', '<legal team|unknown>', '<offering|product>']
+
+
+44 I'm looking for documents for companies offering electric airplanes with an offering size between $200 million and $300 million and announced in the past year.
+44 ['<offering|product>', '<offering size|attribute>', '<between|operator>', '<announced|event>']
+
+
+45 Show me memos for offerings in the rail sector from companies with a market capitalization below $2 billion and a completed offering date between 2021 and 2022.
+45 ['<offering|product>', '<less than|operator>', '<completed|event>', '<offering|product>', '<between|operator>']
+
+
+46 Find memos for offerings exceeding $500 million in the airline industry announced in the past year by companies with "cargo" in their name and a lock-up period exceeding 1 year.
+46 ['<offering size|attribute>', '<airlines|industry>', '<announced|event>', '<greater than|operator>']
+
+
+47 Show me documents for offerings related to electric vehicles in the transportation sector from companies in developing countries announced in the past 6 months and led by [Investment Bank Name].
+47 ['<offering|product>', '<electric vehicles|industry>', '<transportation|sector>', '<announced|event>', '<led by|role>']
+
+
+48 Are there any memos for offerings involving companies with "public transportation" in their name, a size exceeding $100 million, and completed in the past year with a regulation status of Reg A+?
+48 ['<offering|product>', '<transportation|sector>', '<offering size|attribute>', '<greater than|operator>', '<completed|event>']
+
+
+49 I'm looking for documents for offerings completed between 2013 and 2015 where [Specific Person Name] was involved as an advisor and the offering involved companies with "shipping" in their name.
+49 ['<offering|product>', '<completed|event>', '<between|operator>', '<offering|product>', '<shipping|industry>']
+
+
+50 Show me memos for companies offering autonomous transportation technology with an offering size exceeding $500 million and headquartered outside of North America.
+50 ['<offering|product>', '<transportation|sector>', '<offering size|attribute>', '<greater than|operator>', '<headquarters|unknown>', '<north america|region>']
+
+
+51 Find memos for offerings in the airline industry exceeding $400 million from companies in Europe announced after 2020 and involving a greenshoe option.
+51 ['<offering|product>', '<airlines|industry>', '<greater than|operator>', '<europe|region>', '<announced|event>', '<after|dateop>', '<greenshoe|attribute>']
+
+
+52 Show me documents for offerings related to electric vehicles in the transportation sector from companies with a market capitalization exceeding $10 billion and announced in the past year.
+52 ['<offering|product>', '<electric vehicles|industry>', '<transportation|sector>', '<greater than|operator>', '<announced|event>']
+
+
+53 Are there any memos for offerings involving companies with "public transportation" in their name, a size exceeding $50 million, and completed in the past 6 months with a listing on the NASDAQ exchange?
+53 ['<offering|product>', '<transportation|sector>', '<offering size|attribute>', '<greater than|operator>', '<completed|event>']
+
+
+54 I'm looking for documents for offerings completed between 2012 and 2014 where [Specific Person Name] was involved as an advisor and the offering involved companies with "logistics" in their name and a size exceeding $100 million.
+54 ['<offering|product>', '<completed|event>', '<between|operator>', '<offering|product>', '<offering size|attribute>', '<greater than|operator>']
+
+
+55 Show me memos for companies offering autonomous transportation technology with an offering size exceeding $250 million and involving a co-manager from [Specific Investment Bank Name].
+55 ['<offering|product>', '<transportation|sector>', '<offering size|attribute>', '<greater than|operator>', '<led by|role>']
+
+
+56 Find memos for offerings in the shipping industry exceeding $300 million from companies in North America announced before 2021 and involving a greenshoe option.
+56 ['<offering|product>', '<shipping|industry>', '<greater than|operator>', '<north america|region>', '<announced|event>', '<before|dateop>', '<greenshoe|attribute>']
+
+
+57 Show me documents for convertible offerings led by [Investment Bank Name] involving companies with "logistics" in their name and a size exceeding $200 million.
+57 ['<convertibles|product>', '<offering|product>', '<led by|role>', '<offering size|attribute>', '<greater than|operator>']
+
+
+58 Are there any memos for offerings completed between 2011 and 2013 where [Specific Lawyer Name] was involved in the legal team and the offering involved companies with "freight" in their name and a size below $50 million?
+58 ['<offering|product>', '<completed|event>', '<between|operator>', '<legal team|unknown>', '<offering|product>', '<freight|industry>', '<offering size|attribute>', '<less than|operator>']
+
+
+59 I'm looking for documents for companies offering electric airplanes with an offering size exceeding $100 million and announced in the past year and involving an underwriter syndicate.
+59 ['<offering|product>', '<offering size|attribute>', '<greater than|operator>', '<announced|event>', '<underwriter|role>']
+
+
+60 Show me memos for offerings in the rail sector from companies with a market capitalization between $2 billion and $5 billion and an upcoming offering date.
+60 ['<offering|product>', '<between|operator>', '<offering|product>']
+
+
+61 Find memos for offerings exceeding $200 million in the airline industry announced in the past year by companies with "cargo" in their name and a lock-up period exceeding 6 months.
+61 ['<offering size|attribute>', '<airlines|industry>', '<announced|event>', '<greater than|operator>']
+
+
+62 Show me documents for offerings related to electric vehicles in the transportation sector from companies in Europe announced in the past 3 months with a size exceeding $750 million.
+62 ['<offering|product>', '<electric vehicles|industry>', '<transportation|sector>', '<europe|region>', '<announced|event>', '<offering size|attribute>', '<greater than|operator>']
+
+
+63 Are there any memos for offerings involving companies with "public transportation" in their name, a size exceeding $25 million, and completed in the past year with a listing on the NYSE exchange?
+63 ['<offering|product>', '<transportation|sector>', '<offering size|attribute>', '<greater than|operator>', '<completed|event>']
+
+
+64 I'm looking for documents for offerings completed between 2010 and 2012 where [Specific Person Name] was involved as an advisor and the offering involved companies with "shipping" in their name and a regulation status of Reg S.
+64 ['<offering|product>', '<completed|event>', '<between|operator>', '<offering|product>', '<shipping|industry>']
+
+
+65 Show me memos for companies offering autonomous transportation technology with an offering size between $250 million and $500 million and led by an investment bank outside the top 10.
+65 ['<offering|product>', '<transportation|sector>', '<offering size|attribute>', '<between|operator>', '<led by|role>']
+
+
+66 Find memos for offerings in the airline industry exceeding $100 million from companies in Asia announced after 2019 and involving a co-manager from [Specific Investment Bank Name].
+66 ['<offering|product>', '<airlines|industry>', '<greater than|operator>', '<asia|region>', '<announced|event>', '<after|dateop>', '<led by|role>']
+
+
+67 Show me documents for offerings related to electric vehicles in the transportation sector from companies with a market capitalization below $5 billion and announced in the past year.
+67 ['<offering|product>', '<electric vehicles|industry>', '<transportation|sector>', '<less than|operator>', '<announced|event>']
+
+
+68 Are there any memos for offerings involving companies with "public transportation" in their name, a size exceeding $10 million, and completed in the past 6 months with a greenshoe option exceeding 5%?
+68 ['<offering|product>', '<transportation|sector>', '<offering size|attribute>', '<greater than|operator>', '<completed|event>', '<greenshoe|attribute>', '<greater than|operator>']
+
+
+69 I'm looking for documents for offerings completed between 2009 and 2011 where [Specific Person Name] was involved as an advisor and the offering involved companies with "logistics" in their name and a size below $50 million.
+69 ['<offering|product>', '<completed|event>', '<between|operator>', '<offering|product>', '<offering size|attribute>', '<less than|operator>']
+
+
+70 Show me memos for companies offering autonomous transportation technology with an offering size exceeding $100 million and involving a lead underwriter with a specialization in technology IPOs.
+70 ['<offering|product>', '<transportation|sector>', '<offering size|attribute>', '<greater than|operator>', '<underwriter|role>', '<ipo|product>']
+
+
+71 Find memos for offerings in the shipping industry exceeding $50 million from companies in developing countries announced before 2020 and involving a co-manager from [Specific Investment Bank Name].
+71 ['<offering|product>', '<shipping|industry>', '<greater than|operator>', '<announced|event>', '<before|dateop>', '<led by|role>']
+
+
+72 Show me documents for offerings related to electric vehicles in the transportation sector from companies headquartered outside of North America and announced in the past 6 months with a size exceeding $500 million.
+72 ['<offering|product>', '<electric vehicles|industry>', '<transportation|sector>', '<headquarters|unknown>', '<north america|region>', '<announced|event>', '<offering size|attribute>', '<greater than|operator>']
+
+
+73 Are there any memos for offerings involving companies with "public transportation" in their name and completed in the past year with a size exceeding $5 million and a lock-up period exceeding 3 months?
+73 ['<offering|product>', '<transportation|sector>', '<completed|event>', '<offering size|attribute>', '<greater than|operator>', '<greater than|operator>']
+
+
+74 I'm looking for documents for offerings completed between 2008 and 2010 where [Specific Person Name] was involved as an advisor and the offering involved companies with "freight" in their name and a listing on a regional exchange.
+74 ['<offering|product>', '<completed|event>', '<between|operator>', '<offering|product>', '<freight|industry>']
+
+
+75 Show me memos for companies offering autonomous transportation technology with an offering size below $100 million and involving a legal team with expertise in intellectual property law.
+75 ['<offering|product>', '<transportation|sector>', '<offering size|attribute>', '<less than|operator>', '<legal team|unknown>']
+
+
+76 Find memos for offerings exceeding $50 million in the airline industry announced in the past year by companies with "cargo" in their name and a greenshoe option exceeding 3%.
+76 ['<offering size|attribute>', '<airlines|industry>', '<announced|event>', '<greenshoe|attribute>', '<greater than|operator>']
+
+
+77 Show me documents for offerings related to electric vehicles in the transportation sector from companies in Europe announced in the past 3 months with a market capitalization exceeding $20 billion.
+77 ['<offering|product>', '<electric vehicles|industry>', '<transportation|sector>', '<europe|region>', '<announced|event>', '<greater than|operator>']
+
+
+78 Are there any memos for offerings involving companies with "public transportation" in their name and completed in the past year with a size exceeding $1 million and a regulation status of Regulation D?
+78 ['<offering|product>', '<transportation|sector>', '<completed|event>', '<offering size|attribute>', '<greater than|operator>']
+
+
+79 I'm looking for documents for offerings completed between 2007 and 2009 where [Specific Person Name] was involved as an advisor and the offering involved companies with "shipping" in their name and a co-manager from [Specific Investment Bank Name].
+79 ['<offering|product>', '<completed|event>', '<between|operator>', '<offering|product>', '<shipping|industry>', '<led by|role>']
+
+
+80 Show me memos for companies offering autonomous transportation technology with an offering size exceeding $50 million and involving a lead underwriter with a strong track record in the transportation sector.
+80 ['<offering|product>', '<transportation|sector>', '<offering size|attribute>', '<greater than|operator>', '<underwriter|role>', '<transportation|sector>']
+
+
+81 Find memos for offerings in the airline industry exceeding $25 million from companies in North America announced after 2018 and involving a greenshoe option and a lock-up period exceeding 1 year.
+81 ['<offering|product>', '<airlines|industry>', '<greater than|operator>', '<north america|region>', '<announced|event>', '<after|dateop>', '<greenshoe|attribute>', '<greater than|operator>']
+
+
+82 Show me documents for offerings related to electric vehicles in the transportation sector from companies with a market capitalization below $1 billion and announced in the past year with a size exceeding $250 million.
+82 ['<offering|product>', '<electric vehicles|industry>', '<transportation|sector>', '<less than|operator>', '<announced|event>', '<offering size|attribute>', '<greater than|operator>']
+
+
+83 Are there any memos for offerings involving companies with "public transportation" in their name and completed in the past 6 months with a size exceeding $500,000
+83 ['<offering|product>', '<transportation|sector>', '<completed|event>', '<offering size|attribute>', '<greater than|operator>']
+
+
+84 ...and involving an underwriter syndicate with at least 3 member banks.
+84 ['<underwriter|role>']
+
+
+85 I'm looking for documents for offerings completed between 2006 and 2008 where [Specific Person Name] was involved as an advisor and the offering involved companies with "logistics" in their name and a regulation status of Rule 144A.
+85 ['<offering|product>', '<completed|event>', '<between|operator>', '<offering|product>']
+
+
+86 Show me memos for companies offering autonomous transportation technology with an offering size exceeding $25 million and involving a lead underwriter with experience in complex financial structuring.
+86 ['<offering|product>', '<transportation|sector>', '<offering size|attribute>', '<greater than|operator>', '<underwriter|role>']
+
+
+87 Find memos for offerings exceeding $10 million in the shipping industry from companies in Europe announced before 2019 and involving a co-manager from [Specific Investment Bank Name] and a lock-up period exceeding 6 months.
+87 ['<offering size|attribute>', '<shipping|industry>', '<europe|region>', '<announced|event>', '<before|dateop>', '<led by|role>', '<greater than|operator>']
+
+
+88 Show me documents for offerings related to electric vehicles in the transportation sector from companies headquartered outside of North America and announced in the past year with a size exceeding $100 million and a listing on a major stock exchange.
+88 ['<offering|product>', '<electric vehicles|industry>', '<transportation|sector>', '<headquarters|unknown>', '<north america|region>', '<announced|event>', '<offering size|attribute>', '<greater than|operator>']
+
+
+89 Are there any memos for offerings involving companies with "public transportation" in their name and completed in the past year with a size exceeding $250,000 and a greenshoe option exceeding 1%?
+89 ['<offering|product>', '<transportation|sector>', '<completed|event>', '<offering size|attribute>', '<greater than|operator>', '<greenshoe|attribute>', '<greater than|operator>']
+
+
+90 I'm looking for documents for offerings completed between 2005 and 2007 where [Specific Person Name] was involved as an advisor and the offering involved companies with "freight" in their name and a size exceeding $25 million.
+90 ['<offering|product>', '<completed|event>', '<between|operator>', '<offering|product>', '<freight|industry>', '<offering size|attribute>', '<greater than|operator>']
+
+
+91 Show me memos for companies offering autonomous transportation technology with an offering size below $50 million and involving a legal team with experience in international regulatory compliance.
+91 ['<offering|product>', '<transportation|sector>', '<offering size|attribute>', '<less than|operator>', '<legal team|unknown>']
+
+
+92 Find memos for offerings exceeding $5 million in the airline industry announced in the past year by companies with "cargo" in their name and a lock-up period exceeding 3 months and a greenshoe option exceeding 2%.
+92 ['<offering size|attribute>', '<airlines|industry>', '<announced|event>', '<greater than|operator>', '<greenshoe|attribute>', '<greater than|operator>']
+
+
+93 Show me documents for offerings related to electric vehicles in the transportation sector from companies in Europe announced in the past 3 months with a market capitalization exceeding $10 billion and a size exceeding $500 million.
+93 ['<offering|product>', '<electric vehicles|industry>', '<transportation|sector>', '<europe|region>', '<announced|event>', '<greater than|operator>', '<offering size|attribute>', '<greater than|operator>']
+
+
+94 Are there any memos for offerings involving companies with "public transportation" in their name and completed in the past 6 months with a size exceeding $100,000 and a regulation status of Regulation SX?
+94 ['<offering|product>', '<transportation|sector>', '<completed|event>', '<offering size|attribute>', '<greater than|operator>']
+
+
+95 I'm looking for documents for offerings completed between 2004 and 2006 where [Specific Person Name] was involved as an advisor and the offering involved companies with "shipping" in their name and a co-manager from [Specific Investment Bank Name] and a listing on a regional exchange.
+95 ['<offering|product>', '<completed|event>', '<between|operator>', '<offering|product>', '<shipping|industry>', '<led by|role>']
