@@ -13,4 +13,6 @@ start_date, end_date: a range of dates in format greater. use #NA# if not presen
 region: one of North America, Asia, Japan, Europe, Rest of the World based on closest mapping to country. use #NA# if not present in query
 sector: one value like Technology, Healthcare, Consumer Products, Industrials, Transportation etc. use #NA# if not present in query 
 text: everything else in the query not matching above relations
+
+query: valuations for ipo deals between 500million and 1billion for LATAM during 2023
 </pre>
