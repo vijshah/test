@@ -1,0 +1,20 @@
+User: Create a EUC  memo for an IPO deal.
+
+(Background, LLM and agent identify intent and prompt user for some basic input)
+
+Asst: Sure, I can help with a customized powerpoint template for presentation to the EUC committee. Here are some of the topics commonly covered in an IPO deal. Please select and confirm topics you would like to include.
+
+Editable table of topics...
+
+(User edits/adds topics)
+
+(Background Agent uses PowerPoint automation to create slides with appropriate headers and content and sends back file to user)
+
+
+[19/05, 8:19 am] Vijay Shah: Bells and whistles...
+
+Agent prompts user for any existing deal Id and prepopulates a lot of content from
+
+1. D2
+2. Sec filings (company description, financials, ...)
+3. Other sources 
